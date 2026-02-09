@@ -32,3 +32,41 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+// Reviews: show only 3 by default, toggle all
+(() => {
+  const grid = document.getElementById("reviewsGrid");
+  const btn = document.getElementById("toggleReviews");
+  if (!grid || !btn) return;
+
+  const items = Array.from(grid.querySelectorAll(".quote"));
+  const LIMIT = 3;
+
+  function collapse() {
+    items.forEach((el, i) => {
+      if (i >= LIMIT) el.classList.add("is-hidden");
+    });
+    btn.textContent = "Більше відгуків";
+    btn.setAttribute("aria-expanded", "false");
+  }
+
+  function expand() {
+    items.forEach((el) => el.classList.remove("is-hidden"));
+    btn.textContent = "Згорнути відгуки";
+    btn.setAttribute("aria-expanded", "true");
+  }
+
+  // якщо відгуків <= 3 — кнопку ховаємо
+  if (items.length <= LIMIT) {
+    btn.style.display = "none";
+    return;
+  }
+
+  let opened = false;
+  collapse();
+
+  btn.addEventListener("click", () => {
+    opened = !opened;
+    opened ? expand() : collapse();
+  });
+})();

@@ -360,6 +360,18 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 
+/* Reviews: show 3 by default */
+.reviews-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+#reviewsGrid > .quote.is-hidden {
+  display: none;
+}
+
+
 /* Contact */
 .contact { display: grid; gap: 10px; margin-top: 12px; }
 .contact__row {
