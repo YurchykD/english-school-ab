@@ -1,346 +1,350 @@
 <!doctype html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>English school A&B — Say “Yes” to English!</title>
-    <meta
-      name="description"
-      content="Онлайн-заняття з англійської для дітей і дорослих. Міні-групи або індивідуально. Безкоштовне пробне заняття."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- Top nav -->
-    <header class="topbar" id="top">
-      <div class="container topbar__inner">
-        <a class="brand" href="#top" aria-label="English school A&B">
-          <span class="brand__mark">A&B</span>
-          <span class="brand__text">English school</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A&B English Academy — Say “Yes” to English!</title>
+  <meta name="description"
+    content="Онлайн-заняття з англійської для дітей і дорослих. Міні-групи або індивідуально. Безкоштовне пробне заняття." />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top nav -->
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="A&B English Academy">
+        <span class="brand__mark">A&B</span>
+        <span class="brand__text">English Academy</span>
+      </a>
+
+      <nav class="nav" aria-label="Навігація">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#home">🏠 Головна</a>
+          <a class="nav__link" href="#about">👩‍🏫 Про школу</a>
+          <a class="nav__link" href="#courses">📚 Курси</a>
+          <a class="nav__link" href="#reviews">💬 Відгуки</a>
+          <a class="nav__link" href="#contact"><i class="fa-solid fa-phone"></i> Контакти</a>
+          <a class="btn btn--small btn--primary" href="#signup">Записатися</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home" aria-label="Головний екран">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__badge">A&B English Academy</div>
+        <h1 class="hero__title">Розкрийте свій англійський потенціал</h1>
+        <p class="hero__subtitle">
+          Say “Yes” to English! Онлайн-заняття з англійської мови для дітей і дорослих.
+          Навчання у міні-групах або індивідуально. Інтерактивно, зрозуміло, з результатом 💡
+        </p>
+
+        <div class="hero__bullets">
+          <div class="pill">📍 Онлайн у зручний для вас час</div>
+          <div class="pill">🎓 Сучасні методики, доброзичлива атмосфера</div>
+          <div class="pill">🧠 Говоріння • Аудіювання • Читання • Письмо</div>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#signup">Запишіться на безкоштовне пробне заняття</a>
+          <a class="btn btn--ghost" href="#courses">Ознайомтеся з курсами</a>
+        </div>
+
+        <a class="scrollhint" href="#about" aria-label="Прокрутити вниз">
+          <span class="scrollhint__mouse"></span>
+          <span class="scrollhint__text">Далі</span>
         </a>
-
-        <nav class="nav" aria-label="Навігація">
-          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-            <span></span><span></span><span></span>
-          </button>
-
-          <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="#home">🏠 Головна</a>
-            <a class="nav__link" href="#about">👩‍🏫 Про школу</a>
-            <a class="nav__link" href="#courses">📚 Курси</a>
-            <a class="nav__link" href="#reviews">💬 Відгуки</a>
-            <a class="nav__link" href="#contact">📞 Контакти</a>
-            <a class="btn btn--small btn--primary" href="#signup">Записатися</a>
-          </div>
-        </nav>
       </div>
-    </header>
+    </section>
 
-    <!-- Hero -->
-    <main>
-      <section class="hero" id="home" aria-label="Головний екран">
-        <div class="hero__bg" aria-hidden="true"></div>
-        <div class="container hero__content">
-          <div class="hero__badge">English school A&amp;B</div>
-          <h1 class="hero__title">Розкрийте свій англійський потенціал</h1>
-          <p class="hero__subtitle">
-            Say “Yes” to English! Онлайн-заняття з англійської мови для дітей і дорослих.
-            Навчання у міні-групах або індивідуально. Інтерактивно, зрозуміло, з результатом 💡
+    <!-- About -->
+    <section class="section section--light" id="about" aria-label="Про школу">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">👩‍🏫 Про школу</h2>
+          <p class="muted">
+            A&B English Academy — це місце, де англійська стає простою, цікавою і практичною.
           </p>
-
-          <div class="hero__bullets">
-            <div class="pill">📍 Онлайн у зручний для вас час</div>
-            <div class="pill">🎓 Сучасні методики, доброзичлива атмосфера</div>
-            <div class="pill">🧠 Говоріння • Аудіювання • Читання • Письмо</div>
-          </div>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#signup">Запишіться на безкоштовне пробне заняття</a>
-            <a class="btn btn--ghost" href="#courses">Ознайомтеся з курсами</a>
-          </div>
-
-          <a class="scrollhint" href="#about" aria-label="Прокрутити вниз">
-            <span class="scrollhint__mouse"></span>
-            <span class="scrollhint__text">Далі</span>
-          </a>
         </div>
-      </section>
 
-      <!-- About -->
-      <section class="section section--light" id="about" aria-label="Про школу">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="h2">👩‍🏫 Про школу</h2>
-            <p class="muted">
-              English school A&amp;B — це місце, де англійська стає простою, цікавою і практичною.
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">Наша мета</h3>
+            <p>
+              Ми допомагаємо подолати страх говоріння, систематизувати знання та почати
+              використовувати мову у реальному житті.
+            </p>
+            <p>
+              Наші викладачі мають досвід роботи з різними віковими групами та рівнями, використовують
+              інтерактивні платформи, відео, ігри та сучасні матеріали.
             </p>
           </div>
 
-          <div class="grid grid--2">
-            <div class="card">
-              <h3 class="h3">Наша мета</h3>
-              <p>
-                Ми допомагаємо подолати страх говоріння, систематизувати знання та почати
-                використовувати мову у реальному житті.
-              </p>
-              <p>
-                Наші викладачі мають досвід роботи з різними віковими групами та рівнями, використовують
-                інтерактивні платформи, відео, ігри та сучасні матеріали.
-              </p>
-            </div>
-
-            <div class="card">
-              <h3 class="h3">Підхід</h3>
-              <ul class="list">
-                <li>📚 Навчання адаптоване під ваші потреби</li>
-                <li>💬 Багато розмовної практики</li>
-                <li>🧩 Чітка структура і відчутний прогрес</li>
-                <li>🤝 Дружня атмосфера та підтримка</li>
-              </ul>
-              <div class="callout">
-                <strong>Ми віримо:</strong> кожен може вивчити англійську, якщо навчання підлаштоване під нього.
-              </div>
+          <div class="card">
+            <h3 class="h3">Підхід</h3>
+            <ul class="list">
+              <li>📚 Навчання адаптоване під ваші потреби</li>
+              <li>💬 Багато розмовної практики</li>
+              <li>🧩 Чітка структура і відчутний прогрес</li>
+              <li>🤝 Дружня атмосфера та підтримка</li>
+            </ul>
+            <div class="callout">
+              <strong>Ми віримо:</strong> кожен може вивчити англійську, якщо навчання підлаштоване під нього.
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Courses -->
-      <section class="section" id="courses" aria-label="Курси">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="h2">📚 Англійські курси для вас</h2>
-            <p class="muted">
-              Ми пропонуємо різноманітні курси, які підійдуть для будь-якого рівня та потреб.
-            </p>
-          </div>
-
-          <div class="grid grid--3">
-            <div class="card card--dark">
-              <h3 class="h3">👨‍👩‍👧‍👦 Групові заняття</h3>
-
-              <div class="subblock">
-                <h4 class="h4">🔹 Для дітей від 10 років</h4>
-                <ul class="list">
-                  <li>Міні-групи до 4 осіб</li>
-                  <li>База: граматика + словниковий запас</li>
-                  <li>Веселі та інтерактивні уроки</li>
-                  <li>Розмовна практика на кожному занятті</li>
-                </ul>
-              </div>
-
-              <div class="subblock">
-                <h4 class="h4">🔹 Для дорослих</h4>
-                <ul class="list">
-                  <li>Теми: спілкування, подорожі, робота</li>
-                  <li>Практика в дружній атмосфері</li>
-                  <li>Реальні ситуації, комунікативні вправи</li>
-                </ul>
-              </div>
-
-              <p class="muted small">
-                🗓️ Заняття проходять двічі на тиждень онлайн. Групи формуються за рівнем знань.
-              </p>
-            </div>
-
-            <div class="card card--dark">
-              <h3 class="h3">👤 Індивідуальні заняття</h3>
-              <p>
-                Програма створюється персонально під ваші цілі:
-              </p>
-              <ul class="list">
-                <li>✈️ подорожі</li>
-                <li>💼 робота</li>
-                <li>🎓 навчання</li>
-              </ul>
-              <ul class="list">
-                <li>Максимум уваги</li>
-                <li>Гнучкий графік</li>
-                <li>Фокус на ваших слабких місцях</li>
-              </ul>
-
-              <div class="mini">
-                <div class="mini__item">📍 Онлайн</div>
-                <div class="mini__item">⏱️ Під ваш час</div>
-                <div class="mini__item">🎯 Під вашу ціль</div>
-              </div>
-            </div>
-
-            <div class="card card--dark">
-              <h3 class="h3">🎯 Що прокачуємо</h3>
-              <div class="skills">
-                <div class="skill">
-                  <div class="skill__name">💬 Говоріння</div>
-                  <div class="skill__desc muted">Більше впевненості та вільна мова</div>
-                </div>
-                <div class="skill">
-                  <div class="skill__name">🎧 Аудіювання</div>
-                  <div class="skill__desc muted">Розуміння англійської на слух</div>
-                </div>
-                <div class="skill">
-                  <div class="skill__name">📖 Читання</div>
-                  <div class="skill__desc muted">Тексти під ваш рівень і тему</div>
-                </div>
-                <div class="skill">
-                  <div class="skill__name">✍️ Письмо</div>
-                  <div class="skill__desc muted">Листи, повідомлення, есе</div>
-                </div>
-              </div>
-
-              <a class="btn btn--primary btn--block" href="#signup">Записатися на пробне заняття</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Reviews -->
-      <section class="section section--light" id="reviews" aria-label="Відгуки">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="h2">💬 Відгуки наших учнів</h2>
-            <p class="muted">Реальні враження — реальний прогрес.</p>
-          </div>
-
-          <div class="grid grid--3">
-            <figure class="quote">
-              <blockquote>
-                ⭐ “Дуже подобається формат! Нарешті почала говорити англійською без страху.”
-              </blockquote>
-              <figcaption class="muted">— Учениця (доросла група)</figcaption>
-            </figure>
-
-            <figure class="quote">
-              <blockquote>
-                ⭐ “Зручний графік, уважний викладач, цікаві уроки.”
-              </blockquote>
-              <figcaption class="muted">— Учень (індивідуально)</figcaption>
-            </figure>
-
-            <figure class="quote">
-              <blockquote>
-                ⭐ “Син із задоволенням ходить на заняття. Видно прогрес вже через місяць!”
-              </blockquote>
-              <figcaption class="muted">— Мама учня</figcaption>
-            </figure>
-          </div>
-
-          <div class="review-note">
-            <p class="muted small">
-              Хочеш додати свій відгук? Напиши нам у Telegram або залиш повідомлення у формі нижче — ми додамо його після модерації.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact + Signup -->
-      <section class="section" id="contact" aria-label="Контакти">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="h2">📞 Контакти</h2>
-            <p class="muted">
-              Виникли питання? Ми із задоволенням відповімо на них, проведемо вас через процес реєстрації та підтримаємо на шляху до вільного володіння англійською.
-            </p>
-          </div>
-
-          <div class="grid grid--2">
-            <div class="card card--dark">
-              <h3 class="h3">Зв’яжіться з нами</h3>
-              <div class="contact">
-                <div class="contact__row">
-                  <div class="contact__label">📧 Email:</div>
-                  <div class="contact__value"><span class="muted">[твоя пошта]</span></div>
-                </div>
-                <div class="contact__row">
-                  <div class="contact__label">📲 Telegram / Viber:</div>
-                  <div class="contact__value"><span class="muted">[твій номер]</span></div>
-                </div>
-                <div class="contact__row">
-                  <div class="contact__label">📍 Формат:</div>
-                  <div class="contact__value"><span class="muted">Онлайн</span></div>
-                </div>
-              </div>
-
-              <div class="social">
-                <a class="social__btn" href="#" aria-label="Instagram" title="Instagram">IG</a>
-                <a class="social__btn" href="#" aria-label="Telegram" title="Telegram">TG</a>
-                <a class="social__btn" href="#" aria-label="Viber" title="Viber">VB</a>
-              </div>
-
-              <p class="muted small">
-                Порада: заміни # у соцмережах на свої реальні посилання.
-              </p>
-            </div>
-
-            <div class="card card--dark" id="signup">
-              <h3 class="h3">🔘 Записатися на пробне заняття</h3>
-              <p class="muted small">Залиш свої дані — ми зв’яжемось та підберемо зручний час.</p>
-
-              <!-- Netlify Forms: працюватиме після деплою на Netlify -->
-              <form
-                class="form"
-                name="lesson-signup"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="form-name" value="lesson-signup" />
-                <p class="hidden">
-                  <label>Don’t fill this out: <input name="bot-field" /></label>
-                </p>
-
-                <label class="field">
-                  <span class="field__label">Ім’я</span>
-                  <input class="field__input" name="name" autocomplete="name" required />
-                </label>
-
-                <label class="field">
-                  <span class="field__label">Телефон / Telegram</span>
-                  <input class="field__input" name="phone" autocomplete="tel" required />
-                </label>
-
-                <label class="field">
-                  <span class="field__label">Email (необовʼязково)</span>
-                  <input class="field__input" name="email" type="email" autocomplete="email" />
-                </label>
-
-                <label class="field">
-                  <span class="field__label">Коментар</span>
-                  <textarea class="field__input field__textarea" name="message" rows="4" placeholder="Рівень, ціль, зручний час"></textarea>
-                </label>
-
-                <button class="btn btn--primary btn--block" type="submit">
-                  Надіслати заявку
-                </button>
-
-                <p class="muted tiny">
-                  Натискаючи кнопку, ви погоджуєтесь, що ми зв’яжемось з вами щодо занять.
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__left">
-          <div class="brand brand--footer">
-            <span class="brand__mark">A&B</span>
-            <span class="brand__text">English school</span>
-          </div>
-          <p class="muted small">Say “Yes” to English! Онлайн-заняття для дітей і дорослих.</p>
-        </div>
-
-        <div class="footer__right">
-          <a class="footer__link" href="#top">↑ Вгору</a>
-          <span class="muted tiny">© <span id="year"></span> English school A&amp;B</span>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Courses -->
+    <section class="section" id="courses" aria-label="Курси">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">📚 Англійські курси для вас</h2>
+          <p class="muted">
+            Ми пропонуємо різноманітні курси, які підійдуть для будь-якого рівня та потреб.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card card--dark">
+            <h3 class="h3">👨‍👩‍👧‍👦 Групові заняття</h3>
+
+            <div class="subblock">
+              <h4 class="h4">🔹 Для дітей від 10 років</h4>
+              <ul class="list">
+                <li>Міні-групи до 4 осіб</li>
+                <li>База: граматика + словниковий запас</li>
+                <li>Веселі та інтерактивні уроки</li>
+                <li>Розмовна практика на кожному занятті</li>
+              </ul>
+            </div>
+
+            <div class="subblock">
+              <h4 class="h4">🔹 Для дорослих</h4>
+              <ul class="list">
+                <li>Теми: спілкування, подорожі, робота</li>
+                <li>Практика в дружній атмосфері</li>
+                <li>Реальні ситуації, комунікативні вправи</li>
+              </ul>
+            </div>
+
+            <p class="muted small">
+              🗓️ Заняття проходять двічі на тиждень онлайн. Групи формуються за рівнем знань.
+            </p>
+          </div>
+
+          <div class="card card--dark">
+            <h3 class="h3">👤 Індивідуальні заняття</h3>
+            <p>
+              Програма створюється персонально під ваші цілі:
+            </p>
+            <ul class="list">
+              <li>✈️ подорожі</li>
+              <li>💼 робота</li>
+              <li>🎓 навчання</li>
+            </ul>
+            <ul class="list">
+              <li>Максимум уваги</li>
+              <li>Гнучкий графік</li>
+              <li>Фокус на ваших слабких місцях</li>
+            </ul>
+
+            <div class="mini">
+              <div class="mini__item">📍 Онлайн</div>
+              <div class="mini__item">⏱️ Під ваш час</div>
+              <div class="mini__item">🎯 Під вашу ціль</div>
+            </div>
+          </div>
+
+          <div class="card card--dark">
+            <h3 class="h3">🎯 Що прокачуємо</h3>
+            <div class="skills">
+              <div class="skill">
+                <div class="skill__name">💬 Говоріння</div>
+                <div class="skill__desc muted">Більше впевненості та вільна мова</div>
+              </div>
+              <div class="skill">
+                <div class="skill__name">🎧 Аудіювання</div>
+                <div class="skill__desc muted">Розуміння англійської на слух</div>
+              </div>
+              <div class="skill">
+                <div class="skill__name">📖 Читання</div>
+                <div class="skill__desc muted">Тексти під ваш рівень і тему</div>
+              </div>
+              <div class="skill">
+                <div class="skill__name">✍️ Письмо</div>
+                <div class="skill__desc muted">Листи, повідомлення, есе</div>
+              </div>
+            </div>
+
+            <a class="btn btn--primary btn--block" href="#signup">Записатися на пробне заняття</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section--light" id="reviews" aria-label="Відгуки">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">💬 Відгуки наших учнів</h2>
+          <p class="muted">Реальні враження — реальний прогрес.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <figure class="quote">
+            <blockquote>
+              ⭐ “Дуже подобається формат! Нарешті почала говорити англійською без страху.”
+            </blockquote>
+            <figcaption class="muted">— Учениця (доросла група)</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              ⭐ “Зручний графік, уважний викладач, цікаві уроки.”
+            </blockquote>
+            <figcaption class="muted">— Учень (індивідуально)</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              ⭐ “Син із задоволенням ходить на заняття. Видно прогрес вже через місяць!”
+            </blockquote>
+            <figcaption class="muted">— Мама учня</figcaption>
+          </figure>
+        </div>
+
+        <div class="review-note">
+          <p class="muted small">
+            Хочеш додати свій відгук? Напиши нам у Telegram або залиш повідомлення у формі нижче — ми додамо його після
+            модерації.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Signup -->
+    <section class="section" id="contact" aria-label="Контакти">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">📞 Контакти</h2>
+          <p class="muted">
+            Виникли питання? Ми із задоволенням відповімо на них, проведемо вас через процес реєстрації та підтримаємо
+            на шляху до вільного володіння англійською.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card card--dark">
+            <h3 class="h3">Зв’яжіться з нами</h3>
+            <div class="contact">
+              <div class="contact__row">
+                <div class="contact__label">📧 Email:</div>
+                <div class="contact__value"><span class="muted">[твоя пошта]</span></div>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">📲 Telegram / Viber:</div>
+                <div class="contact__value"><span class="muted">+380631777934</span></div>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">📍 Формат:</div>
+                <div class="contact__value"><span class="muted">Онлайн</span></div>
+              </div>
+            </div>
+
+            <div class="social">
+              <a href="https://www.instagram.com/voievodchenko_nastya_tutor" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="https://www.facebook.com/people/Anastasiia-Tutor/pfbid06dVHQ8hU92JU7FwamuEutxGmf6JXFm1HvZpNDZS6gyyPxEx2Km3cXibh5NhoKce1l/"Facebook" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a href="https://t.me/AnastasiiaTutor" target="_blank" aria-label="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="card card--dark" id="signup">
+            <h3 class="h3">🔘 Записатися на пробне заняття</h3>
+            <p class="muted small">Залиш свої дані — ми зв’яжемось та підберемо зручний час.</p>
+
+            <!-- Netlify Forms: працюватиме після деплою на Netlify -->
+            <form class="form" name="lesson-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="lesson-signup" />
+              <p class="hidden">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <label class="field">
+                <span class="field__label">Ім’я</span>
+                <input class="field__input" name="name" autocomplete="name" required />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Телефон / Telegram</span>
+                <input class="field__input" name="phone" autocomplete="tel" required />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Email (необовʼязково)</span>
+                <input class="field__input" name="email" type="email" autocomplete="email" />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Коментар</span>
+                <textarea class="field__input field__textarea" name="message" rows="4"
+                  placeholder="Рівень, ціль, зручний час"></textarea>
+              </label>
+
+              <button class="btn btn--primary btn--block" type="submit">
+                Надіслати заявку
+              </button>
+
+              <p class="muted tiny">
+                Натискаючи кнопку, ви погоджуєтесь, що ми зв’яжемось з вами щодо занять.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <span class="brand__mark">A&B</span>
+          <span class="brand__text">English Academy</span>
+        </div>
+        <p class="muted small">Say “Yes” to English! Онлайн-заняття для дітей і дорослих.</p>
+      </div>
+
+      <div class="footer__right">
+        <a class="footer__link" href="#top">↑ Вгору</a>
+        <span class="muted tiny">© <span id="year"></span> A&B English Academy</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
