@@ -70,3 +70,38 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     opened ? expand() : collapse();
   });
 })();
+
+const track = document.getElementById("galleryTrack");
+const prev = document.getElementById("galleryPrev");
+const next = document.getElementById("galleryNext");
+
+prev.onclick = () => {
+  track.scrollBy({ left: -300, behavior: "smooth" });
+};
+
+next.onclick = () => {
+  track.scrollBy({ left: 300, behavior: "smooth" });
+};
+
+// Lightbox
+const images = document.querySelectorAll(".gallery__item");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxClose = document.getElementById("lightboxClose");
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.classList.remove("hidden");
+    lightboxImg.src = img.src;
+  });
+});
+
+lightboxClose.onclick = () => {
+  lightbox.classList.add("hidden");
+};
+
+lightbox.onclick = (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.add("hidden");
+  }
+};
